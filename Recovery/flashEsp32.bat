@@ -1,0 +1,2 @@
+python .\esptool\esptool.py -p "COM4" -b 460800          --before default_reset --after hard_reset --chip esp32 write_flash --flash_mode dio          --flash_freq 40m --flash_size detect 0x10000 Firmware\\Versa_WIFI_Screen.bin 0x1000 Firmware\\bootloader.bin 0x8000 Firmware\\partition-table.bin 0xD000 Firmware\\ota_data_initial.bin
+pause
